@@ -3,8 +3,12 @@ Godot learning resources
 
 ## Resources
 
-http://ambientcg.com
-https://polyhaven.com
+- http://ambientcg.com
+- https://polyhaven.com
+
+## Youtube Videos
+
+- https://www.youtube.com/@stayathomedev
 
 ## Key Topics
 
