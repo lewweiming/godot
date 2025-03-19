@@ -1,21 +1,20 @@
-# Godot 4+
-
 extends CharacterBody2D
 
 const SPEED = 80
 const GRAVITY = 500
-const JUMPFORCE = -300
+const JUMPFORCE = -500
 
 func _physics_process(delta):
 	
 	if Input.is_action_pressed("right"):
 		self.velocity.x += SPEED
+		$Sprite.play("walk")
 		$Sprite.flip_h = false
-		$Sprite.play("walk")
-	if Input.is_action_pressed("left"):
+		
+	elif Input.is_action_pressed("left"):
 		self.velocity.x -= SPEED
-		$Sprite.flip_h = true
 		$Sprite.play("walk")
+		$Sprite.flip_h = true
 	else:
 		$Sprite.play("idle")
 		
